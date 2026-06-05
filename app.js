@@ -3,7 +3,7 @@ let current = 0;
 
 /* 🔥 CARGAR LIBRO DESDE GITHUB */
 async function loadBook(){
-  const res = await fetch("books.json");
+  const res = await fetch("book.json");
   book = await res.json();
 
   render();
