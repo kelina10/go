@@ -67,7 +67,7 @@ function download(){
 
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
-  a.download = "goopedia.json";
+  a.download = "go.json";
   a.click();
 }
 
