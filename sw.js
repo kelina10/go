@@ -1,11 +1,11 @@
  self.addEventListener("install", e=>{
   e.waitUntil(
-    caches.open("goopedia").then(cache=>{
+    caches.open("go").then(cache=>{
       return cache.addAll([
         "./",
-        "./index.html",
+        "./ko.html",
         "./app.js",
-        "./books.json"
+        "./book.json"
       ]);
     })
   );
